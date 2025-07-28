@@ -93,3 +93,6 @@ header ul li a:hover {
 }
 
 /* Cards Fim */
+.atual{
+    color: red;
+}
