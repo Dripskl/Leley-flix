@@ -78,13 +78,13 @@ header ul li a:hover {
 
 
 .forms option {
-  background-color: white;       /* fundo branco */
-  color: black;                  /* texto preto */
+  background-color: white;
+  color: black;
 }
 
 .forms option:hover {
-  background-color: black;       /* fundo preto no hover */
-  color: white;                  /* texto branco no hover */
+  background-color: black;
+  color: white;
 }
 
 .forms h1, h3, h4{
