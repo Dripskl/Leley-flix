@@ -1,0 +1,57 @@
+body {
+    background-color: #111; /* fundo escuro estilo Netflix */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+form {
+    background-color: #181818;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+form input[type="text"],
+form input[type="number"] {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+form input[type="text"]::placeholder,
+form input[type="number"]::placeholder {
+    color: #bbb;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    outline: 2px solid #e50914;
+}
+
+form input[type="submit"] {
+    background-color: #e50914;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #b0060f;
+    transform: scale(1.03);
+}
