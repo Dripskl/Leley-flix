@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
 
-html{
-    scroll-behavior: smooth;
-}
 
 body{
     font-family: "Poppins", sans-serif;
     background-color: #141414;
-    
     margin: 0;
     padding: 0;
 }
-
 /* Cabeçalho inicio*/
 header {
     display: flex;
@@ -54,47 +49,63 @@ header ul li a:hover {
 }
 /* Cabeçalho fim*/
 
-
-/* Cards inicio */
-
-.cards {
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 150px;
-  padding-top: 100px;
+.container{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+form {
+    background-color: #181818;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
-.card {
-  background-color: #1c1c1c;
-  color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 300px;
-  box-shadow: 0 0 10px #000;
-  transition: transform 0.5s ease;
+form input[type="text"],
+form input[type="password"] {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
 }
 
-.card:hover {
-  transform: scale(1.1);
+form input[type="text"]::placeholder,
+form input[type="password"]::placeholder {
+    color: #bbb;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    outline: 2px solid #e50914;
 }
 
-.card h3 {
-  margin: 10px;
-  font-size: 20px;
-  text-align: center;
+form input[type="submit"],.create {
+    background-color: #e50914;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.card p {
-  margin: 0 10px 10px 10px;
-  font-size: 14px;
+form input[type="submit"]:hover, .create:hover {
+    background-color: #b0060f;
+    transform: scale(1.03);
 }
 
-/* Cards Fim */
+.create {
+    text-decoration: None;
+}

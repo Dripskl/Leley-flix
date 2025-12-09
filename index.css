@@ -8,6 +8,13 @@ body{
     
     margin: 0;
     padding: 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+to {
+    opacity: 1;
+    }
 }
 
 /* Cabeçalho inicio*/
@@ -100,6 +107,3 @@ header ul li a:hover {
 .leley{
     color: red;
 }   
-.atual{
-    color: red;
-}
