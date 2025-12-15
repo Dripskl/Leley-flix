@@ -126,3 +126,36 @@ header ul li a:hover {
     background-color: #b0060f;
     transform: scale(1.05);
 }
+
+/* Estilo do select e botão de filtro */
+form select {
+    background-color: #1c1c1c;
+    color: white;
+    border: 2px solid #e50914;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 10px;
+}
+
+form select:hover {
+    border-color: #b0060f;
+}
+
+form input[type="submit"] {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #b0060f;
+    transform: scale(1.05);
+}
