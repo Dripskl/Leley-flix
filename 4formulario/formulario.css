@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
 
@@ -136,3 +137,143 @@ header ul li a:hover {
     background-color: #8f0007;
 }
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #141414;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho inicio*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #1c1c1c;
+    padding: 15px;
+    transition: padding 0.5s ease;
+}
+
+header img {
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 100px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    margin-right: 75px;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.7s ease;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}
+/* Cabeçalho fim*/
+
+/* formulario inicio */
+.formulario {
+    height: 65vh;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #1c1c1c;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; 
+    padding-bottom: 20px;
+}
+
+.text{
+    align-items: start;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.forms option {
+  background-color: white;       /* fundo branco */
+  color: black;                  /* texto preto */
+}
+
+.forms option:hover {
+  background-color: black;       /* fundo preto no hover */
+  color: white;                  /* texto branco no hover */
+}
+
+.forms h1, h3, h4{
+    color: white;
+}
+
+.forms textarea{
+    max-height: 50px;
+    min-height: 50px;
+    max-width: 300px;
+    min-width: 300px;
+    background-color: transparent;
+    color: white;
+}
+
+.text {
+  text-align: left;
+}
+
+.forms input,
+.forms select {
+  width: 260px;
+  box-sizing: border-box; 
+  margin: 3px auto;
+  text-align: center;
+  height: 30px;
+  border-radius: 40px;
+  border: 2px solid #e50914;
+  color: white;
+  background-color: transparent;
+}
+
+.forms button{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #e50914;
+}
+
+.forms input:hover, select:hover{
+    background-color: #000000;
+}
+
+.forms button:hover{
+    background-color: #8f0007;
+}
+
+>>>>>>> 5e8c50bb1212bb48f036da0f682076071b382549
