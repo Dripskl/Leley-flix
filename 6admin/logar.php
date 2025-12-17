@@ -18,9 +18,9 @@
             <li><a href="../4formulario/formulario.php">Indique uma Série ou Filme</a></li>
             <li><a href="../5blog/blog.php">Blog</a></li>
             <li><a href="../6admin/logar.php">login</a></li>
-            <?php if (isset($_SESSION['id']) && $_SESSION['id'] == 1): ?>
-            <li><a href="6admin/admin.php">Admin</a></li>
-            <?php endif; ?>
+                <?php if (isset($_SESSION['id']) && $_SESSION['id'] == 1): ?>
+                <li><a href="6admin/admin.php">Admin</a></li>
+                <?php endif; ?>
     </ul>
 </header>
 
@@ -65,11 +65,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
         $result = mysqli_query($conexao, $sql);
 
+        $user_sql = "SELECT usuario FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+        $result_user = mysqli_query($conexao,$user_sql);
+        $user = mysqli_fetch_assoc($result_user);
         $usuario = mysqli_fetch_assoc($result);
 
         if ($usuario) {
             $_SESSION['id'] = $usuario['id'];
             $_SESSION['email'] = $usuario['email'];
+            $_SESSION['usuario'] = $user['usuario'];
             header("Location: ../index.php");
             
 

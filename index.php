@@ -1,4 +1,4 @@
-<?php 
+<?php
 include '6admin/protect.php';
 ?>
 
@@ -21,9 +21,14 @@ include '6admin/protect.php';
             <li><a href="3filmes/filmes.php">Filmes</a></li>
             <li><a href="4formulario/formulario.php">Indique uma Série ou Filme</a></li>
             <li><a href="5blog/blog.php">Blog</a></li>
-            <li><a href="6admin/logar.php">perfil</a></li>
+            <?php if (!isset($_SESSION['id'])): ?>
+                <li><a href="6admin/logar.php">Logar</a></li>
+            <?php endif; ?>
+            <?php if (isset($_SESSION['id'])): ?>
+            <li><a href="6admin/logar.php"><?php echo $_SESSION['usuario']; ?></a></li>
+            <?php endif; ?>
             <?php if (isset($_SESSION['id']) && $_SESSION['id'] == 1): ?>
-            <li><a href="6admin/admin.php">Admin</a></li>
+                <li><a href="6admin/admin.php">Admin</a></li>
             <?php endif; ?>
 
         </ul>
@@ -31,12 +36,13 @@ include '6admin/protect.php';
     <!-- Cabeçalho Fim -->
 
     <main class="bem">
-        <p>🎬 Bem-vindo ao <span class="leley">Leleyflix!</span></p> 
+        <p>🎬 Bem-vindo ao <span class="leley">Leleyflix!</span></p>
     </main>
     <div class="texto">
-        <p>Este site foi criado para compartilhar minhas séries e filmes favoritos. Sinta-se à vontade para explorar, conhecer minhas recomendações e até sugerir algo novo!</p>
+        <p>Este site foi criado para compartilhar minhas séries e filmes favoritos. Sinta-se à vontade para explorar,
+            conhecer minhas recomendações e até sugerir algo novo!</p>
         <p>Comece pelas <span class="serie"><a href="2series/series.html">Series</a></span>!</p>
     </div>
 </body>
 
-</html> 
+</html>
